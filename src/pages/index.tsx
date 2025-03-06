@@ -22,9 +22,10 @@ export default function Home() {
       } else {
         setError(data.error || "Failed to fetch embedding");
       }
-    } catch (err) {
+    } catch {
       setError("Something went wrong");
     }
+    
   }
 
   return (
